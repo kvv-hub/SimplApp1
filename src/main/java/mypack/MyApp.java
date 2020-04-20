@@ -30,11 +30,6 @@ public class MyApp {
 
         app.testMethod();
 
-        System.out.println("4565");
-        System.out.println("4565");
-        System.out.println("4565");
-        System.out.println("4565");
-        System.out.println("4565");
 
 
 
