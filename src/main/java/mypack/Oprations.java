@@ -35,10 +35,14 @@ public class Oprations {
                         to.getLock().unlock();
                     }
                 }
-                else System.out.println("Счет пополнения блокирован!!!");
+                else {
+                    System.out.println("Счет пополнения блокирован!!! "+to.incFailedTransferCount());
+                }
             } finally { from.getLock().unlock();
             }
-            else System.out.println("Счет списания блокирован!!!");
+            else {
+            System.out.println("Счет списания блокирован!!! " + from.incFailedTransferCount());
+        }
 
         return true;
     }
